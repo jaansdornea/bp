@@ -45,7 +45,8 @@ object IsSum extends App {
   // shows that target 5 is reached upon value index = 3
   assert (3 == (sumIndex(5, mockStream)))
   
-  // try out the console stream by typing in consecutive numbers
+  println("try out the console stream by typing in consecutive numbers")
+  println("your target is 5, so the program will end when you've typed in numbers that add to 5 on separate lines")
   println(sumIndex(5, consoleStream))
 
 }
