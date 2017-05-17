@@ -61,9 +61,9 @@ class StdInIntStream extends MockStream[Int] with MockStreamReader[Int] {
 
 /**
  * MockStreamReader implementation for an List[Int] 
- * repeats forever up until cacheFactor length
+ * repeats forever up until allowedIterations 
  */
-class InfiniteListIntStream(val delegate: List[Int], allowedIterations: Int = 10) extends MockStream[Int] 
+class InfiniteListIntStream(val delegate: List[Int], allowedIterations: Int = 1000) extends MockStream[Int] 
   with MockStreamReader[Int] {
     var i = -1
     var waterMark = 0
